@@ -16,16 +16,6 @@ Este projeto prático consiste na implementação, análise e comparação de de
 
 ---
 
-## Estrutura do Projeto
-
-O código está organizado da seguinte forma:
-* `main.c`: Fluxo principal que coordena a geração do arquivo, criação dos índices, execução dos testes cronometrados e exibição do resumo estatístico.
-* `Includes/`: Arquivos de cabeçalho (`.h`) com os protótipos e definições de tipos (`registro.h`, `TAD_arv.h`, `TAD_arv_ano.h`, `TAD_hash.h`, `estatisticas.h`).
-* `Main/`: Implementações em C dos módulos e TADs correspondentes.
-* `TADs/`: Pasta criada automaticamente durante a compilação para armazenar os arquivos de objeto (`.o`).
-
----
-
 ## Descrição das Questões
 
 O programa executa de forma sequencial um bloco de 30 buscas de teste para avaliar o tempo médio, desvio padrão e tempo total gasto em cada uma das abordagens abaixo:
