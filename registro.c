@@ -148,8 +148,10 @@ int arquivo_busca_seq_chave(FILE *arq, int chave_alvo, registro *resultado)
 void gerar_chaves(int chaves[], int n, int max)
 {
     srand(999983); 
-    for (int i = 0; i < n; i++)
-        chaves[i] = 1 + rand() % max;
+    for (int i = 0; i < n; i++){
+        long long r = (long long)rand() * RAND_MAX + rand();
+        chaves[i] = 1 + r % max;
+    }
 }
 
 int arquivo_busca_seq_ano(FILE *arq, int limiar, int op)
